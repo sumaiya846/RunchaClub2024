@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Runcha | Menu</title>
+  <style>
+    body {
+      background-color: #0a0f18;
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      padding: 20px;
+      border-bottom: 1px solid #333;
+    }
+
+    header h1 {
+      font-size: 2em;
+      margin: 0;
+      color: #fff;
+      letter-spacing: 1px;
+    }
+
+    .menu-section {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      color: #f5d76e;
+      font-size: 1.8em;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #f5d76e;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .menu-item {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .menu-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
+    }
+
+    .menu-item img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .menu-item h3 {
+      margin: 10px 0 5px;
+      color: #fff;
+      font-size: 1.2em;
+    }
+
+    .menu-item p,
+    ul li {
+      margin: 5px 0;
+      font-size: 0.95em;
+      color: #ccc;
+    }
+
+    .price {
+      color: #f5d76e;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    ul.menu-list {
+      list-style: none;
+      padding: 0;
+      text-align: left;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    ul.menu-list li {
+      display: flex;
+      justify-content: space-between;
+      padding: 5px 0;
+      border-bottom: 1px solid #222;
+    }
+
+
+    /* Mobile responsive styling */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.5em;
+      }
+
+      h2 {
+        font-size: 1.3em;
+      }
+
+      .menu-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .menu-item img {
+        height: 150px;
+      }
+
+      body {
+        font-size: 0.9em;
+        padding: 0 10px;
+      }
+    }
+
+    /* Slight adjustments for very small screens */
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 1.3em;
+      }
+
+      .menu-item h3 {
+        font-size: 1em;
+      }
+
+      .price {
+        font-size: 0.9em;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>RUNCHA MENU</h1>
+    <p>润茶菜单</p>
+  </header>
+
+  <div class="menu-section">
+    <h2>Braised Items</h2>
+    <div class="menu-grid">
+      <div class="menu-item"><img src="braisedbeef.jpg" alt="" />
+        <h3>Braised Beef</h3>
+        <p>Per Serving</p>
+        <div class="price">BDT 1200</div>
+      </div>
+      <div class="menu-item"><img src="dummy.jpg" alt="" />
+        <h3>Braised Beef Tripe</h3>
+        <div class="price">BDT 1200</div>
+      </div>
+      <div class="menu-item"><img src="beeftongue.jpg" alt="" />
+        <h3>Braised Beef Tongue</h3>
+        <div class="price">BDT 1200</div>
+      </div>
+      <div class="menu-item"><img src="duckhead.jpeg" alt="" />
+        <h3>Braised Duck Head</h3>
+        <div class="price">BDT 200</div>
+      </div>
+      <div class="menu-item"><img src="dummy.jpg" alt="" />
+        <h3>Braised Chicken Wings</h3>
+        <div class="price">BDT 200</div>
+      </div>
+      <div class="menu-item"><img src="dummy.jpg" alt="" />
+        <h3>Braised Chicken Feet</h3>
+        <div class="price">BDT 80</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-section">
+    <h2>Staple Food</h2>
+    <div class="menu-grid">
+      <div class="menu-item"><img src="dummy.jpg" alt="" />
+        <h3>Chinese Fried Rice</h3>
+        <div class="price">BDT 390</div>
+      </div>
+      <div class="menu-item"><img src="dummy.jpg" alt="" />
+        <h3>Chinese Fried Noodles</h3>
+        <div class="price">BDT 390</div>
+      </div>
+      <div class="menu-item"><img src="dummy.jpg" alt="" />
+        <h3>Dumplings (8 pcs)</h3>
+        <div class="price">BDT 390</div>
+      </div>
+      <div class="menu-item"><img src="dummy.jpg" alt="" />
+        <h3>Baozi (4 pcs)</h3>
+        <div class="price">BDT 390</div>
+      </div>
+      <div class="menu-item"><img src="dummy.jpg" alt="" />
+        <h3>Braised Beef Brisket & Tomato Rice</h3>
+        <div class="price">BDT 1280</div>
+      </div>
+      <div class="menu-item"><img src="dummy.jpg" alt="" />
+        <h3>Kung Pao Chicken with Rice</h3>
+        <div class="price">BDT 880</div>
+      </div>
+      <div class="menu-item"><img src="dummy.jpg" alt="" />
+        <h3>Braised Eggplant in Yu-Shiang Sauce with Rice</h3>
+        <div class="price">BDT 880</div>
+      </div>
+      <div class="menu-item"><img src="dummy.jpg" alt="" />
+        <h3>Tender Boiled Chicken</h3>
+        <div class="price">BDT 1280</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-section">
+    <h2>Oden</h2>
+    <ul class="menu-list">
+      <li><span>Chicken Meatball</span><span>BDT 100</span></li>
+      <li><span>Fish Tofu</span><span>BDT 160</span></li>
+      <li><span>Frozen Bean Curd</span><span>BDT 60</span></li>
+      <li><span>Tempura</span><span>BDT 160</span></li>
+      <li><span>Quail Egg</span><span>BDT 100</span></li>
+      <li><span>Cauliflower</span><span>BDT 40</span></li>
+      <li><span>Radish</span><span>BDT 30</span></li>
+      <li><span>Sausage</span><span>BDT 120</span></li>
+    </ul>
+  </div>
+
+  <div class="menu-section">
+    <h2>Dry Pot, Fried & Cold Dishes</h2>
+    <ul class="menu-list">
+      <li><span>Dry Pot Chicken Feet (10 pcs)</span><span>BDT 1580</span></li>
+      <li><span>Spicy Duck Heads (10 pcs)</span><span>BDT 1680</span></li>
+      <li><span>Fried Peanuts</span><span>BDT 150</span></li>
+      <li><span>Cold Tossed Cucumber</span><span>BDT 250</span></li>
+    </ul>
+  </div>
+
+  <div class="menu-section">
+    <h2>Grilled Items</h2>
+    <div class="menu-grid">
+      <div class="menu-item"><img src="dummy.jpg" alt="" />
+        <h3>Beef with Pineapple</h3>
+        <div class="price">BDT 120</div>
+      </div>
+      <div class="menu-item"><img src="dummy.jpg" alt="" />
+        <h3>Beef Skewers</h3>
+        <div class="price">BDT 150</div>
+      </div>
+      <div class="menu-item"><img src="dummy.jpg" alt="" />
+        <h3>Lamb Skewers</h3>
+        <div class="price">BDT 150</div>
+      </div>
+      <div class="menu-item"><img src="dummy.jpg" alt="" />
+        <h3>Whole Grilled Chicken Wings</h3>
+        <div class="price">BDT 200</div>
+      </div>
+      <div class="menu-item"><img src="dummy.jpg" alt="" />
+        <h3>Grilled Shrimp</h3>
+        <div class="price">BDT 130</div>
+      </div>
+      <div class="menu-item"><img src="dummy.jpg" alt="" />
+        <h3>Grilled Lamb Kidneys</h3>
+        <div class="price">BDT 200</div>
+      </div>
+      <div class="menu-item"><img src="dummy.jpg" alt="" />
+        <h3>Grilled Beef Tongue</h3>
+        <div class="price">BDT 150</div>
+      </div>
+      <div class="menu-item"><img src="dummy.jpg" alt="" />
+        <h3>Grilled Chicken Feet</h3>
+        <div class="price">BDT 80</div>
+      </div>
+      <div class="menu-item"><img src="dummy.jpg" alt="" />
+        <h3>Grilled Chicken Gizzards</h3>
+        <div class="price">BDT 80</div>
+      </div>
+      <div class="menu-item"><img src="dummy.jpg" alt="" />
+        <h3>Grilled Chicken Hearts</h3>
+        <div class="price">BDT 80</div>
+      </div>
+    </div>
+
+    <ul class="menu-list">
+      <li><span>Grilled Knife Fish</span><span>BDT 200</span></li>
+      <li><span>Grilled Chicken Meatballs</span><span>BDT 100</span></li>
+      <li><span>Grilled Sausages</span><span>BDT 100</span></li>
+      <li><span>Grilled Fish Balls</span><span>BDT 120</span></li>
+      <li><span>Grilled Chicken Drumsticks</span><span>BDT 200</span></li>
+      <li><span>Grilled Fish Tofu</span><span>BDT 100</span></li>
+      <li><span>Grilled Green Peppers</span><span>BDT 80</span></li>
+      <li><span>Grilled Potato Slices</span><span>BDT 30</span></li>
+      <li><span>Grilled Bread</span><span>BDT 50</span></li>
+      <li><span>Grilled Okra</span><span>BDT 30</span></li>
+      <li><span>Grilled Dried Tofu</span><span>BDT 80</span></li>
+      <li><span>Grilled Quail Eggs</span><span>BDT 100</span></li>
+      <li><span>Grilled Corn</span><span>BDT 250</span></li>
+      <li><span>Grilled Garlic</span><span>BDT 50</span></li>
+      <li><span>Grilled Steamed Bread Slices</span><span>BDT 30</span></li>
+      <li><span>Grilled Green Beans</span><span>BDT 60</span></li>
+      <li><span>Grilled Cauliflower</span><span>BDT 50</span></li>
+      <li><span>Grilled Chives (Serving)</span><span>BDT 50</span></li>
+      <li><span>Grilled Cabbage</span><span>BDT 50</span></li>
+      <li><span>Grilled Tofu</span><span>BDT 100</span></li>
+      <li><span>Grilled Eggplant (Serving)</span><span>BDT 200</span></li>
+    </ul>
+  </div>
+</body>
+
+</html>
